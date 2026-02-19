@@ -48,7 +48,7 @@ import (
 	"github.com/go-openapi/runtime/flagext"
 	"github.com/go-openapi/swag"
 
-	"github.com/openziti/edge-api/rest_client_api_server/operations"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations"
 )
 
 const (

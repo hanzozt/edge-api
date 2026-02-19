@@ -38,7 +38,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/openziti/edge-api/rest_model"
+	"github.com/hanzozt/edge-api/rest_model"
 )
 
 // NewCreatePostureResponseBulkParams creates a new CreatePostureResponseBulkParams object

@@ -40,7 +40,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
 
-	"github.com/openziti/edge-api/rest_model"
+	"github.com/hanzozt/edge-api/rest_model"
 )
 
 // NewRefreshEnrollmentParams creates a new RefreshEnrollmentParams object

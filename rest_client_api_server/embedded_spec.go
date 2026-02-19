@@ -53,12 +53,12 @@ func init() {
   ],
   "swagger": "2.0",
   "info": {
-    "description": "OpenZiti Edge Client API",
+    "description": "Hanzo ZT Edge Client API",
     "title": "Ziti Edge Client",
     "contact": {
-      "name": "OpenZiti",
-      "url": "https://openziti.discourse.group",
-      "email": "help@openziti.org"
+      "name": "Hanzo ZT",
+      "url": "https://hanzozt.discourse.group",
+      "email": "help@hanzozt.dev"
     },
     "license": {
       "name": "Apache 2.0",
@@ -10709,12 +10709,12 @@ func init() {
   ],
   "swagger": "2.0",
   "info": {
-    "description": "OpenZiti Edge Client API",
+    "description": "Hanzo ZT Edge Client API",
     "title": "Ziti Edge Client",
     "contact": {
-      "name": "OpenZiti",
-      "url": "https://openziti.discourse.group",
-      "email": "help@openziti.org"
+      "name": "Hanzo ZT",
+      "url": "https://hanzozt.discourse.group",
+      "email": "help@hanzozt.dev"
     },
     "license": {
       "name": "Apache 2.0",

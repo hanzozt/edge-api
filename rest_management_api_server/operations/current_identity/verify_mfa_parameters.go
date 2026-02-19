@@ -39,7 +39,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/openziti/edge-api/rest_model"
+	"github.com/hanzozt/edge-api/rest_model"
 )
 
 // NewVerifyMfaParams creates a new VerifyMfaParams object

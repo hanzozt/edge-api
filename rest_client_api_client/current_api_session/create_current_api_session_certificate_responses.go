@@ -39,7 +39,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/openziti/edge-api/rest_model"
+	"github.com/hanzozt/edge-api/rest_model"
 )
 
 // CreateCurrentAPISessionCertificateReader is a Reader for the CreateCurrentAPISessionCertificate structure.

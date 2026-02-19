@@ -25,14 +25,14 @@
 
 // Package rest_client_api_server Ziti Edge Client
 //
-//	OpenZiti Edge Client API
+//	Hanzo ZT Edge Client API
 //	Schemes:
 //	  https
 //	Host: demo.ziti.dev
 //	BasePath: /edge/client/v1
 //	Version: 0.26.53
 //	License: Apache 2.0 https://www.apache.org/licenses/LICENSE-2.0.html
-//	Contact: OpenZiti<help@openziti.org> https://openziti.discourse.group
+//	Contact: Hanzo ZT<help@hanzozt.dev> https://hanzozt.discourse.group
 //
 //	Consumes:
 //	  - application/pkcs7

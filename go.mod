@@ -1,4 +1,4 @@
-module github.com/openziti/edge-api
+module github.com/hanzozt/edge-api
 
 go 1.24.7
 

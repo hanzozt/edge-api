@@ -103,6 +103,6 @@ fi
 echo "...fixing go module deps"
 prev=$(pwd)
 cd "$codeTarget"
-go mod init github.com/openziti/edge-api || true
+go mod init github.com/hanzozt/edge-api || true
 go mod tidy
 cd "$prev"

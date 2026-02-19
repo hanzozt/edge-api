@@ -18,7 +18,7 @@ package rest_util
 
 import (
 	"fmt"
-	"github.com/openziti/edge-api/rest_model"
+	"github.com/hanzozt/edge-api/rest_model"
 )
 
 // WrapErr return an error that has been wrapped so that err.Error() prints useful API error information if possible.

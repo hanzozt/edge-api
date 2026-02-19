@@ -1,3 +1,3 @@
-module github.com/openziti/edge-api-rest/edge-rest
+module github.com/hanzozt/edge-api-rest/edge-rest
 
 go 1.19

@@ -44,32 +44,32 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/openziti/edge-api/rest_management_api_server/operations/api_session"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/auth_policy"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/authentication"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/authenticator"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/certificate_authority"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/config"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/controllers"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/current_api_session"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/current_identity"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/database"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/edge_router"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/edge_router_policy"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/enrollment"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/external_jwt_signer"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/identity"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/informational"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/posture_checks"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/role_attributes"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/router"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/service"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/service_edge_router_policy"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/service_policy"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/session"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/settings"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/terminator"
-	"github.com/openziti/edge-api/rest_management_api_server/operations/well_known"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/api_session"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/auth_policy"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/authentication"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/authenticator"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/certificate_authority"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/config"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/controllers"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/current_api_session"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/current_identity"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/database"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/edge_router"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/edge_router_policy"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/enrollment"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/external_jwt_signer"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/identity"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/informational"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/posture_checks"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/role_attributes"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/router"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/service"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/service_edge_router_policy"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/service_policy"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/session"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/settings"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/terminator"
+	"github.com/hanzozt/edge-api/rest_management_api_server/operations/well_known"
 )
 
 // NewZitiEdgeManagementAPI creates a new ZitiEdgeManagement instance
@@ -1501,7 +1501,7 @@ func NewZitiEdgeManagementAPI(spec *loads.Document) *ZitiEdgeManagementAPI {
 	}
 }
 
-/*ZitiEdgeManagementAPI OpenZiti Edge Management API */
+/*ZitiEdgeManagementAPI Hanzo ZT Edge Management API */
 type ZitiEdgeManagementAPI struct {
 	spec            *loads.Document
 	context         *middleware.Context

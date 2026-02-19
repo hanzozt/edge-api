@@ -44,18 +44,18 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/openziti/edge-api/rest_client_api_server/operations/authentication"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/controllers"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/current_api_session"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/current_identity"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/enroll"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/enrollment"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/external_jwt_signer"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/informational"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/posture_checks"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/service"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/session"
-	"github.com/openziti/edge-api/rest_client_api_server/operations/well_known"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/authentication"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/controllers"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/current_api_session"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/current_identity"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/enroll"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/enrollment"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/external_jwt_signer"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/informational"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/posture_checks"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/service"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/session"
+	"github.com/hanzozt/edge-api/rest_client_api_server/operations/well_known"
 )
 
 // NewZitiEdgeClientAPI creates a new ZitiEdgeClient instance
@@ -515,7 +515,7 @@ func NewZitiEdgeClientAPI(spec *loads.Document) *ZitiEdgeClientAPI {
 	}
 }
 
-/*ZitiEdgeClientAPI OpenZiti Edge Client API */
+/*ZitiEdgeClientAPI Hanzo ZT Edge Client API */
 type ZitiEdgeClientAPI struct {
 	spec            *loads.Document
 	context         *middleware.Context

@@ -35,7 +35,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/swag"
 
-	"github.com/openziti/edge-api/rest_model"
+	"github.com/hanzozt/edge-api/rest_model"
 )
 
 // DetailControllerSettingEffectiveOKCode is the HTTP code returned for type DetailControllerSettingEffectiveOK

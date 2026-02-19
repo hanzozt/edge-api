@@ -25,9 +25,9 @@ import (
 	"github.com/go-openapi/runtime"
 	openapiclient "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
-	"github.com/openziti/edge-api/rest_management_api_client"
-	"github.com/openziti/edge-api/rest_management_api_client/authentication"
-	"github.com/openziti/edge-api/rest_model"
+	"github.com/hanzozt/edge-api/rest_management_api_client"
+	"github.com/hanzozt/edge-api/rest_management_api_client/authentication"
+	"github.com/hanzozt/edge-api/rest_model"
 	"net/http"
 	"net/url"
 )
@@ -174,7 +174,7 @@ type CertProvider interface {
 	ClientTLSConfig() *tls.Config
 }
 
-// AuthenticatorIdentity is meant to deal with OpenZiti identity files and interfaces defined in the `identity`
+// AuthenticatorIdentity is meant to deal with Hanzo ZT identity files and interfaces defined in the `identity`
 // repository
 type AuthenticatorIdentity struct {
 	CertProvider

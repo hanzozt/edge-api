@@ -1,13 +1,13 @@
 # Edge APIs
 
-This repository contains the Open API 2.0 specification for the OpenZiti Edge Client and Management REST APIs. It also
-contains a generated go module, in the `rest_*` directories that can be used to develop against OpenZiti Controllers.
+This repository contains the Open API 2.0 specification for the Hanzo ZT Edge Client and Management REST APIs. It also
+contains a generated go module, in the `rest_*` directories that can be used to develop against Hanzo ZT Controllers.
 
 ## Versioning
 
-Versioning of the APIs in this repository is independent of the OpenZiti releases created in the
-[`ziti`](https://github.com/openziti/zit) repository. Many versions of these API specifications are compatible with
-multiple versions of the OpenZiti release versions. To make it somewhat intuitive, the minor version number of the API
+Versioning of the APIs in this repository is independent of the Hanzo ZT releases created in the
+[`ziti`](https://github.com/hanzozt/zit) repository. Many versions of these API specifications are compatible with
+multiple versions of the Hanzo ZT release versions. To make it somewhat intuitive, the minor version number of the API
 is the *minimum minor version of the `ziti`* repository releases that this API is compatible with. It will also be
 compatible up until the next minor version of the specifications. Patch versions are used for internal fixes and release
 tags.
@@ -45,8 +45,8 @@ Update the version numbers in `./source/client.yml` and `./source/management.yml
 
 You must clone two repos in adjacent directories.
 
-1. this repo - https://github.com/openziti/edge-api.git
-1. the main ziti repo - https://github.com/openziti/ziti.git
+1. this repo - https://github.com/hanzozt/edge-api.git
+1. the main ziti repo - https://github.com/hanzozt/ziti.git
 
 ### Generate the Specifications and Test
 
