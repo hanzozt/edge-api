@@ -274,7 +274,7 @@ definitions:
         $ref: '../shared/base-entity.yml#/definitions/tags'
       name:
         type: string
-        example: default.ziti-tunneler-server.v1
+        example: default.zt-tunneler-server.v1
       configTypeId:
         type: string
         description: The id of a config-type that the data section will match
@@ -300,7 +300,7 @@ definitions:
         $ref: '../shared/base-entity.yml#/definitions/tags'
       name:
         type: string
-        example: default.ziti-tunneler-server.v1
+        example: default.zt-tunneler-server.v1
       data:
         type: object
         x-nullable: false
@@ -319,7 +319,7 @@ definitions:
         $ref: '../shared/base-entity.yml#/definitions/tags'
       name:
         type: string
-        example: default.ziti-tunneler-server.v1
+        example: default.zt-tunneler-server.v1
       data:
         type: object
         additionalProperties: true

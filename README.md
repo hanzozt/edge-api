@@ -6,9 +6,9 @@ contains a generated go module, in the `rest_*` directories that can be used to 
 ## Versioning
 
 Versioning of the APIs in this repository is independent of the Hanzo ZT releases created in the
-[`ziti`](https://github.com/hanzozt/zit) repository. Many versions of these API specifications are compatible with
+[`zt`](https://github.com/hanzozt/zit) repository. Many versions of these API specifications are compatible with
 multiple versions of the Hanzo ZT release versions. To make it somewhat intuitive, the minor version number of the API
-is the *minimum minor version of the `ziti`* repository releases that this API is compatible with. It will also be
+is the *minimum minor version of the `zt`* repository releases that this API is compatible with. It will also be
 compatible up until the next minor version of the specifications. Patch versions are used for internal fixes and release
 tags.
 
@@ -46,11 +46,11 @@ Update the version numbers in `./source/client.yml` and `./source/management.yml
 You must clone two repos in adjacent directories.
 
 1. this repo - https://github.com/hanzozt/edge-api.git
-1. the main ziti repo - https://github.com/hanzozt/ziti.git
+1. the main zt repo - https://github.com/hanzozt/zt.git
 
 ### Generate the Specifications and Test
 
-You must create a workspace for the main repo (`ziti`) to run tests against the checkout in this repo (`edge-api`).
+You must create a workspace for the main repo (`zt`) to run tests against the checkout in this repo (`edge-api`).
 
 #### Linux/Darwin Example
 
@@ -59,7 +59,7 @@ You must create a workspace for the main repo (`ziti`) to run tests against the 
     set -euxo pipefail;
     ./scripts/generate_rest.sh;
     (
-        cd ../ziti;
+        cd ../zt;
         [[ -s ./go.work ]] && mv -v ./go.work{,.$(date --utc --iso-8601=seconds)};
         go work init;
         go work use .;

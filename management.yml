@@ -16,7 +16,7 @@ info:
         url: https://www.apache.org/licenses/LICENSE-2.0.html
     title: Ziti Edge Management
     version: 0.26.53
-host: demo.ziti.dev
+host: demo.zt.dev
 basePath: /edge/management/v1
 paths:
     /:
@@ -23269,7 +23269,7 @@ definitions:
                 type: object
                 x-nullable: false
             name:
-                example: default.ziti-tunneler-server.v1
+                example: default.zt-tunneler-server.v1
                 type: string
             tags:
                 $ref: '#/definitions/tags'
@@ -23317,7 +23317,7 @@ definitions:
                 description: Data payload is defined by the schema of the config-type defined in the type parameter
                 type: object
             name:
-                example: default.ziti-tunneler-server.v1
+                example: default.zt-tunneler-server.v1
                 type: string
             tags:
                 $ref: '#/definitions/tags'
@@ -23326,7 +23326,7 @@ definitions:
         description: A config-type create object
         properties:
             name:
-                example: ziti-tunneler-server.v1
+                example: zt-tunneler-server.v1
                 type: string
             schema:
                 additionalProperties: true
@@ -23342,7 +23342,7 @@ definitions:
             - $ref: '#/definitions/baseEntity'
             - properties:
                 name:
-                    example: ziti-tunneler-server.v1
+                    example: zt-tunneler-server.v1
                     type: string
                 schema:
                     additionalProperties: true
@@ -23363,7 +23363,7 @@ definitions:
         description: A config-type patch object
         properties:
             name:
-                example: ziti-tunneler-server.v1
+                example: zt-tunneler-server.v1
                 type: string
             schema:
                 additionalProperties: true
@@ -23376,7 +23376,7 @@ definitions:
         description: A config-type update object
         properties:
             name:
-                example: ziti-tunneler-server.v1
+                example: zt-tunneler-server.v1
                 type: string
             schema:
                 additionalProperties: true
@@ -23406,7 +23406,7 @@ definitions:
                 type: object
                 x-nullable: false
             name:
-                example: default.ziti-tunneler-server.v1
+                example: default.zt-tunneler-server.v1
                 type: string
             tags:
                 $ref: '#/definitions/tags'
@@ -25399,7 +25399,7 @@ definitions:
         type: string
     mfaProviders:
         enum:
-            - ziti
+            - zt
             - url
         type: string
     namedRole:

@@ -118,7 +118,7 @@ try
     # works around those changes from showing up in commits by switching to forward slashes.
     #
     # There appears to be no option to suppress this line in the `swagger` executable.
-    $configureFile = Join-Path $managementServerOutDir "/configure_ziti_edge_management.go" -Resolve
+    $configureFile = Join-Path $managementServerOutDir "/configure_zt_edge_management.go" -Resolve
 
     $content = ""
     foreach ($line in Get-Content $configureFile)
@@ -133,7 +133,7 @@ try
 
     $content | Set-Content $configureFile -nonewline
 
-    $configureFile = Join-Path $clientServerOutDir "/configure_ziti_edge_client.go" -Resolve
+    $configureFile = Join-Path $clientServerOutDir "/configure_zt_edge_client.go" -Resolve
 
     $content = ""
     foreach ($line in Get-Content $configureFile)

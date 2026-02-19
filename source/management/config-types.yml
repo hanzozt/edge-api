@@ -245,7 +245,7 @@ definitions:
         properties:
           name:
             type: string
-            example: ziti-tunneler-server.v1
+            example: zt-tunneler-server.v1
           schema:
             description: A JSON schema to enforce configuration against
             type: object
@@ -260,7 +260,7 @@ definitions:
         $ref: '../shared/base-entity.yml#/definitions/tags'
       name:
         type: string
-        example: ziti-tunneler-server.v1
+        example: zt-tunneler-server.v1
       schema:
         description: A JSON schema to enforce configuration against
         type: object
@@ -275,7 +275,7 @@ definitions:
         $ref: '../shared/base-entity.yml#/definitions/tags'
       name:
         type: string
-        example: ziti-tunneler-server.v1
+        example: zt-tunneler-server.v1
       schema:
         description: A JSON schema to enforce configuration against
         type: object
@@ -288,7 +288,7 @@ definitions:
         $ref: '../shared/base-entity.yml#/definitions/tags'
       name:
         type: string
-        example: ziti-tunneler-server.v1
+        example: zt-tunneler-server.v1
       schema:
         description: A JSON schema to enforce configuration against
         type: object

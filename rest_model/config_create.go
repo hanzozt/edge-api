@@ -54,7 +54,7 @@ type ConfigCreate struct {
 	Data any `json:"data"`
 
 	// name
-	// Example: default.ziti-tunneler-server.v1
+	// Example: default.zt-tunneler-server.v1
 	// Required: true
 	Name *string `json:"name"`
 

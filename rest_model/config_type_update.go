@@ -45,7 +45,7 @@ import (
 type ConfigTypeUpdate struct {
 
 	// name
-	// Example: ziti-tunneler-server.v1
+	// Example: zt-tunneler-server.v1
 	// Required: true
 	Name *string `json:"name"`
 

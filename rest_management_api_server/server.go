@@ -65,7 +65,7 @@ func init() {
 	}
 }
 
-// NewServer creates a new api ziti edge management server but does not configure it
+// NewServer creates a new api zt edge management server but does not configure it
 func NewServer(api *operations.ZitiEdgeManagementAPI) *Server {
 	s := new(Server)
 
@@ -89,14 +89,14 @@ func (s *Server) ConfigureFlags() {
 	}
 }
 
-// Server for the ziti edge management API
+// Server for the zt edge management API
 type Server struct {
 	EnabledListeners []string         `long:"scheme" description:"the listeners to enable, this can be repeated and defaults to the schemes in the swagger spec"`
 	CleanupTimeout   time.Duration    `long:"cleanup-timeout" description:"grace period for which to wait before killing idle connections" default:"10s"`
 	GracefulTimeout  time.Duration    `long:"graceful-timeout" description:"grace period for which to wait before shutting down the server" default:"15s"`
 	MaxHeaderSize    flagext.ByteSize `long:"max-header-size" description:"controls the maximum number of bytes the server will read parsing the request header's keys and values, including the request line. It does not limit the size of the request body." default:"1MiB"`
 
-	SocketPath    flags.Filename `long:"socket-path" description:"the unix socket to listen on" default:"/var/run/ziti-edge-management.sock"`
+	SocketPath    flags.Filename `long:"socket-path" description:"the unix socket to listen on" default:"/var/run/zt-edge-management.sock"`
 	domainSocketL net.Listener
 
 	Host         string        `long:"host" description:"the IP to listen on" default:"localhost" env:"HOST"`
@@ -209,13 +209,13 @@ func (s *Server) Serve() (err error) {
 
 		servers = append(servers, domainSocket)
 		wg.Add(1)
-		s.Logf("Serving ziti edge management at unix://%s", s.SocketPath)
+		s.Logf("Serving zt edge management at unix://%s", s.SocketPath)
 		go func(l net.Listener) {
 			defer wg.Done()
 			if errServe := domainSocket.Serve(l); errServe != nil && !errors.Is(errServe, http.ErrServerClosed) {
 				s.Fatalf("%v", errServe)
 			}
-			s.Logf("Stopped serving ziti edge management at unix://%s", s.SocketPath)
+			s.Logf("Stopped serving zt edge management at unix://%s", s.SocketPath)
 		}(s.domainSocketL)
 	}
 
@@ -239,13 +239,13 @@ func (s *Server) Serve() (err error) {
 
 		servers = append(servers, httpServer)
 		wg.Add(1)
-		s.Logf("Serving ziti edge management at http://%s", s.httpServerL.Addr())
+		s.Logf("Serving zt edge management at http://%s", s.httpServerL.Addr())
 		go func(l net.Listener) {
 			defer wg.Done()
 			if errServe := httpServer.Serve(l); errServe != nil && !errors.Is(errServe, http.ErrServerClosed) {
 				s.Fatalf("%v", errServe)
 			}
-			s.Logf("Stopped serving ziti edge management at http://%s", l.Addr())
+			s.Logf("Stopped serving zt edge management at http://%s", l.Addr())
 		}(s.httpServerL)
 	}
 
@@ -332,13 +332,13 @@ func (s *Server) Serve() (err error) {
 
 		servers = append(servers, httpsServer)
 		wg.Add(1)
-		s.Logf("Serving ziti edge management at https://%s", s.httpsServerL.Addr())
+		s.Logf("Serving zt edge management at https://%s", s.httpsServerL.Addr())
 		go func(l net.Listener) {
 			defer wg.Done()
 			if errServe := httpsServer.Serve(l); errServe != nil && !errors.Is(errServe, http.ErrServerClosed) {
 				s.Fatalf("%v", errServe)
 			}
-			s.Logf("Stopped serving ziti edge management at https://%s", l.Addr())
+			s.Logf("Stopped serving zt edge management at https://%s", l.Addr())
 		}(tls.NewListener(s.httpsServerL, httpsServer.TLSConfig))
 	}
 

@@ -131,7 +131,7 @@ paths:
       - Enroll
     post:
       parameters:
-        - name: ziti-token-issuer-id
+        - name: zt-token-issuer-id
           in: header
           description: The id of the token issuer to use for enrollment, optional as long the the token is not opaque
           required: false

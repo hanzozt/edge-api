@@ -66,7 +66,7 @@ func init() {
     },
     "version": "0.26.53"
   },
-  "host": "demo.ziti.dev",
+  "host": "demo.zt.dev",
   "basePath": "/edge/management/v1",
   "paths": {
     "/": {
@@ -34480,7 +34480,7 @@ func init() {
         },
         "name": {
           "type": "string",
-          "example": "default.ziti-tunneler-server.v1"
+          "example": "default.zt-tunneler-server.v1"
         },
         "tags": {
           "$ref": "#/definitions/tags"
@@ -34546,7 +34546,7 @@ func init() {
         },
         "name": {
           "type": "string",
-          "example": "default.ziti-tunneler-server.v1"
+          "example": "default.zt-tunneler-server.v1"
         },
         "tags": {
           "$ref": "#/definitions/tags"
@@ -34569,7 +34569,7 @@ func init() {
       "properties": {
         "name": {
           "type": "string",
-          "example": "ziti-tunneler-server.v1"
+          "example": "zt-tunneler-server.v1"
         },
         "schema": {
           "description": "A JSON schema to enforce configuration against",
@@ -34597,7 +34597,7 @@ func init() {
           "properties": {
             "name": {
               "type": "string",
-              "example": "ziti-tunneler-server.v1"
+              "example": "zt-tunneler-server.v1"
             },
             "schema": {
               "description": "A JSON schema to enforce configuration against",
@@ -34621,7 +34621,7 @@ func init() {
       "properties": {
         "name": {
           "type": "string",
-          "example": "ziti-tunneler-server.v1"
+          "example": "zt-tunneler-server.v1"
         },
         "schema": {
           "description": "A JSON schema to enforce configuration against",
@@ -34642,7 +34642,7 @@ func init() {
       "properties": {
         "name": {
           "type": "string",
-          "example": "ziti-tunneler-server.v1"
+          "example": "zt-tunneler-server.v1"
         },
         "schema": {
           "description": "A JSON schema to enforce configuration against",
@@ -34677,7 +34677,7 @@ func init() {
         },
         "name": {
           "type": "string",
-          "example": "default.ziti-tunneler-server.v1"
+          "example": "default.zt-tunneler-server.v1"
         },
         "tags": {
           "$ref": "#/definitions/tags"
@@ -37592,7 +37592,7 @@ func init() {
     "mfaProviders": {
       "type": "string",
       "enum": [
-        "ziti",
+        "zt",
         "url"
       ]
     },
@@ -40453,7 +40453,7 @@ func init() {
     },
     "version": "0.26.53"
   },
-  "host": "demo.ziti.dev",
+  "host": "demo.zt.dev",
   "basePath": "/edge/management/v1",
   "paths": {
     "/": {
@@ -74981,7 +74981,7 @@ func init() {
         },
         "name": {
           "type": "string",
-          "example": "default.ziti-tunneler-server.v1"
+          "example": "default.zt-tunneler-server.v1"
         },
         "tags": {
           "$ref": "#/definitions/tags"
@@ -75047,7 +75047,7 @@ func init() {
         },
         "name": {
           "type": "string",
-          "example": "default.ziti-tunneler-server.v1"
+          "example": "default.zt-tunneler-server.v1"
         },
         "tags": {
           "$ref": "#/definitions/tags"
@@ -75070,7 +75070,7 @@ func init() {
       "properties": {
         "name": {
           "type": "string",
-          "example": "ziti-tunneler-server.v1"
+          "example": "zt-tunneler-server.v1"
         },
         "schema": {
           "description": "A JSON schema to enforce configuration against",
@@ -75098,7 +75098,7 @@ func init() {
           "properties": {
             "name": {
               "type": "string",
-              "example": "ziti-tunneler-server.v1"
+              "example": "zt-tunneler-server.v1"
             },
             "schema": {
               "description": "A JSON schema to enforce configuration against",
@@ -75122,7 +75122,7 @@ func init() {
       "properties": {
         "name": {
           "type": "string",
-          "example": "ziti-tunneler-server.v1"
+          "example": "zt-tunneler-server.v1"
         },
         "schema": {
           "description": "A JSON schema to enforce configuration against",
@@ -75143,7 +75143,7 @@ func init() {
       "properties": {
         "name": {
           "type": "string",
-          "example": "ziti-tunneler-server.v1"
+          "example": "zt-tunneler-server.v1"
         },
         "schema": {
           "description": "A JSON schema to enforce configuration against",
@@ -75178,7 +75178,7 @@ func init() {
         },
         "name": {
           "type": "string",
-          "example": "default.ziti-tunneler-server.v1"
+          "example": "default.zt-tunneler-server.v1"
         },
         "tags": {
           "$ref": "#/definitions/tags"
@@ -78098,7 +78098,7 @@ func init() {
     "mfaProviders": {
       "type": "string",
       "enum": [
-        "ziti",
+        "zt",
         "url"
       ]
     },

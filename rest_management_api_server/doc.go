@@ -28,7 +28,7 @@
 //	Hanzo ZT Edge Management API
 //	Schemes:
 //	  https
-//	Host: demo.ziti.dev
+//	Host: demo.zt.dev
 //	BasePath: /edge/management/v1
 //	Version: 0.26.53
 //	License: Apache 2.0 https://www.apache.org/licenses/LICENSE-2.0.html

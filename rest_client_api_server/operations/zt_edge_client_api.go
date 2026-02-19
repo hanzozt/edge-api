@@ -1076,7 +1076,7 @@ func (o *ZitiEdgeClientAPI) HandlerFor(method, path string) (http.Handler, bool)
 	return h, ok
 }
 
-// Context returns the middleware context for the ziti edge client API
+// Context returns the middleware context for the zt edge client API
 func (o *ZitiEdgeClientAPI) Context() *middleware.Context {
 	if o.context == nil {
 		o.context = middleware.NewRoutableContext(o.spec, o, nil)

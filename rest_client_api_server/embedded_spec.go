@@ -66,7 +66,7 @@ func init() {
     },
     "version": "0.26.53"
   },
-  "host": "demo.ziti.dev",
+  "host": "demo.zt.dev",
   "basePath": "/edge/client/v1",
   "paths": {
     "/": {
@@ -4439,7 +4439,7 @@ func init() {
           {
             "type": "string",
             "description": "The id of the token issuer to use for enrollment, optional as long the the token is not opaque",
-            "name": "ziti-token-issuer-id",
+            "name": "zt-token-issuer-id",
             "in": "header"
           },
           {
@@ -9651,7 +9651,7 @@ func init() {
     "mfaProviders": {
       "type": "string",
       "enum": [
-        "ziti",
+        "zt",
         "url"
       ]
     },
@@ -10722,7 +10722,7 @@ func init() {
     },
     "version": "0.26.53"
   },
-  "host": "demo.ziti.dev",
+  "host": "demo.zt.dev",
   "basePath": "/edge/client/v1",
   "paths": {
     "/": {
@@ -15095,7 +15095,7 @@ func init() {
           {
             "type": "string",
             "description": "The id of the token issuer to use for enrollment, optional as long the the token is not opaque",
-            "name": "ziti-token-issuer-id",
+            "name": "zt-token-issuer-id",
             "in": "header"
           },
           {
@@ -20392,7 +20392,7 @@ func init() {
     "mfaProviders": {
       "type": "string",
       "enum": [
-        "ziti",
+        "zt",
         "url"
       ]
     },

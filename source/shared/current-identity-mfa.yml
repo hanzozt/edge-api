@@ -238,7 +238,7 @@ definitions:
   mfaProviders:
     type: string
     enum:
-      - ziti
+      - zt
       - url
   mfaCreatedEnvelope:
     type: object

@@ -16,7 +16,7 @@ info:
         url: https://www.apache.org/licenses/LICENSE-2.0.html
     title: Ziti Edge Client
     version: 0.26.53
-host: demo.ziti.dev
+host: demo.zt.dev
 basePath: /edge/client/v1
 paths:
     /:
@@ -3065,7 +3065,7 @@ paths:
             parameters:
                 - description: The id of the token issuer to use for enrollment, optional as long the the token is not opaque
                   in: header
-                  name: ziti-token-issuer-id
+                  name: zt-token-issuer-id
                   type: string
                 - description: An identifying token to enroll with
                   in: header
@@ -6579,7 +6579,7 @@ definitions:
         type: string
     mfaProviders:
         enum:
-            - ziti
+            - zt
             - url
         type: string
     networkJWT:

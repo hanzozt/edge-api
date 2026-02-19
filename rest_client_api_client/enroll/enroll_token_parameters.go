@@ -183,15 +183,15 @@ func (o *EnrollTokenParams) SetTokenEnrollmentRequest(tokenEnrollmentRequest *re
 	o.TokenEnrollmentRequest = tokenEnrollmentRequest
 }
 
-// WithZitiTokenIssuerID adds the zitiTokenIssuerID to the enroll token params
-func (o *EnrollTokenParams) WithZitiTokenIssuerID(zitiTokenIssuerID *string) *EnrollTokenParams {
-	o.SetZitiTokenIssuerID(zitiTokenIssuerID)
+// WithZitiTokenIssuerID adds the ztTokenIssuerID to the enroll token params
+func (o *EnrollTokenParams) WithZitiTokenIssuerID(ztTokenIssuerID *string) *EnrollTokenParams {
+	o.SetZitiTokenIssuerID(ztTokenIssuerID)
 	return o
 }
 
-// SetZitiTokenIssuerID adds the zitiTokenIssuerId to the enroll token params
-func (o *EnrollTokenParams) SetZitiTokenIssuerID(zitiTokenIssuerID *string) {
-	o.ZitiTokenIssuerID = zitiTokenIssuerID
+// SetZitiTokenIssuerID adds the ztTokenIssuerId to the enroll token params
+func (o *EnrollTokenParams) SetZitiTokenIssuerID(ztTokenIssuerID *string) {
+	o.ZitiTokenIssuerID = ztTokenIssuerID
 }
 
 // WriteToRequest writes these params to a swagger request
@@ -214,8 +214,8 @@ func (o *EnrollTokenParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.R
 
 	if o.ZitiTokenIssuerID != nil {
 
-		// header param ziti-token-issuer-id
-		if err := r.SetHeaderParam("ziti-token-issuer-id", *o.ZitiTokenIssuerID); err != nil {
+		// header param zt-token-issuer-id
+		if err := r.SetHeaderParam("zt-token-issuer-id", *o.ZitiTokenIssuerID); err != nil {
 			return err
 		}
 	}

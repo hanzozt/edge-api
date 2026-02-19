@@ -54,8 +54,8 @@ func (m MfaProviders) Pointer() *MfaProviders {
 
 const (
 
-	// MfaProvidersZiti captures enum value "ziti"
-	MfaProvidersZiti MfaProviders = "ziti"
+	// MfaProvidersZiti captures enum value "zt"
+	MfaProvidersZiti MfaProviders = "zt"
 
 	// MfaProvidersURL captures enum value "url"
 	MfaProvidersURL MfaProviders = "url"
@@ -66,7 +66,7 @@ var mfaProvidersEnum []any
 
 func init() {
 	var res []MfaProviders
-	if err := json.Unmarshal([]byte(`["ziti","url"]`), &res); err != nil {
+	if err := json.Unmarshal([]byte(`["zt","url"]`), &res); err != nil {
 		panic(err)
 	}
 	for _, v := range res {

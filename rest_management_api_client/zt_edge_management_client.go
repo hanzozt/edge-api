@@ -62,13 +62,13 @@ import (
 	"github.com/hanzozt/edge-api/rest_management_api_client/well_known"
 )
 
-// Default ziti edge management HTTP client.
+// Default zt edge management HTTP client.
 var Default = NewHTTPClient(nil)
 
 const (
 	// DefaultHost is the default Host
 	// found in Meta (info) section of spec file
-	DefaultHost string = "demo.ziti.dev"
+	DefaultHost string = "demo.zt.dev"
 	// DefaultBasePath is the default BasePath
 	// found in Meta (info) section of spec file
 	DefaultBasePath string = "/edge/management/v1"
@@ -77,12 +77,12 @@ const (
 // DefaultSchemes are the default schemes found in Meta (info) section of spec file
 var DefaultSchemes = []string{"https"}
 
-// NewHTTPClient creates a new ziti edge management HTTP client.
+// NewHTTPClient creates a new zt edge management HTTP client.
 func NewHTTPClient(formats strfmt.Registry) *ZitiEdgeManagement {
 	return NewHTTPClientWithConfig(formats, nil)
 }
 
-// NewHTTPClientWithConfig creates a new ziti edge management HTTP client,
+// NewHTTPClientWithConfig creates a new zt edge management HTTP client,
 // using a customizable transport config.
 func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *ZitiEdgeManagement {
 	// ensure nullable parameters have default
@@ -95,7 +95,7 @@ func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *Zit
 	return New(transport, formats)
 }
 
-// New creates a new ziti edge management client
+// New creates a new zt edge management client
 func New(transport runtime.ClientTransport, formats strfmt.Registry) *ZitiEdgeManagement {
 	// ensure nullable parameters have default
 	if formats == nil {
@@ -172,7 +172,7 @@ func (cfg *TransportConfig) WithSchemes(schemes []string) *TransportConfig {
 	return cfg
 }
 
-// ZitiEdgeManagement is a client for ziti edge management
+// ZitiEdgeManagement is a client for zt edge management
 type ZitiEdgeManagement struct {
 	APISession api_session.ClientService
 

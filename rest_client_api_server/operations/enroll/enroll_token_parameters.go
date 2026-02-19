@@ -123,7 +123,7 @@ func (o *EnrollTokenParams) BindRequest(r *http.Request, route *middleware.Match
 		res = append(res, errors.Required("tokenEnrollmentRequest", "body", ""))
 	}
 
-	if err := o.bindZitiTokenIssuerID(r.Header[http.CanonicalHeaderKey("ziti-token-issuer-id")], true, route.Formats); err != nil {
+	if err := o.bindZitiTokenIssuerID(r.Header[http.CanonicalHeaderKey("zt-token-issuer-id")], true, route.Formats); err != nil {
 		res = append(res, err)
 	}
 	if len(res) > 0 {

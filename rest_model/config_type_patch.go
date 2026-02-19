@@ -44,7 +44,7 @@ import (
 type ConfigTypePatch struct {
 
 	// name
-	// Example: ziti-tunneler-server.v1
+	// Example: zt-tunneler-server.v1
 	Name string `json:"name,omitempty"`
 
 	// A JSON schema to enforce configuration against

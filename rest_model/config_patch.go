@@ -48,7 +48,7 @@ type ConfigPatch struct {
 	Data any `json:"data,omitempty"`
 
 	// name
-	// Example: default.ziti-tunneler-server.v1
+	// Example: default.zt-tunneler-server.v1
 	Name string `json:"name,omitempty"`
 
 	// tags
